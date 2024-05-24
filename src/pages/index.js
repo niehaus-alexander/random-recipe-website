@@ -1,3 +1,5 @@
+import RecipeList from "../../components/RecipeList";
+
 const recipes = [
   {
     id: "1",
@@ -20,5 +22,9 @@ const recipes = [
 ];
 
 export default function Home() {
-  return <div className="">Hello World</div>;
+  return (
+    <>
+      <RecipeList recipes={recipes} />
+    </>
+  );
 }
